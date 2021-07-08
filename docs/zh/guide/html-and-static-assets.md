@@ -45,8 +45,8 @@
 // vue.config.js
 module.exports = {
   chainWebpack: config => {
-    // 移除 prefetch 插件
-    config.plugins.delete('prefetch')
+    // 移除 prefetch 插件,需要指定页面如index
+    config.plugins.delete('prefetch-index')
 
     // 或者
     // 修改它的选项：
